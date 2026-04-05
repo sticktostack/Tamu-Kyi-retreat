@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamu Kyi Retreat — Your Home in the Hills</title>
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+  <div class="nav-container">
+
+    <div class="nav-left">
+      <h1>Tamu Kyi <span>Retreat</span></h1>
+    </div>
+
+    <div class="nav-right" id="navMenu">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact-section">Contact</a>
+
+      <a href="#booking-section" class="book-link">
+        <button class="book-now-btn">Book Now</button>
+      </a>
+    </div>
+
+    <!-- Mobile menu icon -->
+    <div class="menu-toggle" id="menuToggle">☰</div>
+
+  </div>
+</nav>
+        </nav>
+        <section id="home">
+            <div class="details">
+                <div class="details-heading">
+                    <h3>Welcome to North Sikkim</h3>
+                </div>
+                <h1>~Find Your Peace in <i><span>Nature's Lap~</span></i></h1>
+                <p>Experience authentic mountain living at Tamu Kyi Retreat, a sanctuary of tranquility nestled in the
+                    heart of the Himalayas.</p>
+                <div class="button-div">
+                    <a href="#gallery"><button>View Gallery</button></a>
+                    <a href="#contact-section"><button>Contact Us</button></a>
+                </div>
+            </div>
+            <img src="./images/view6.jpeg" alt="">
+        </section>
+        <section id="services">
+            <div class="services-heading">
+                <h3>Our Services</h3>
+                <div class="line"></div>
+                <br>
+                <p>We provide everything you need for a comfortable and authentic retreat experience.</p>
+            </div>
+            <div class="service-boxes">
+                <div class="box">
+                    <i class="ri-hotel-bed-line"></i>
+                    <h2>Comfortable Bedrooms</h2>
+                    <p>Spacious rooms with premium bedding and traditional touches for a restful sleep.</p>
+                </div>
+                <div class="box">
+                    <i class="ri-restaurant-line"></i>
+                    <h2>Traditional Kitchen</h2>
+                    <p>Access to a fully equipped kitchen where you can cook or learn local recipes.</p>
+                </div>
+                <div class="box">
+                   <i class="fa-solid fa-mountain"></i>
+                    <h2>Scenic Mountain View</h2>
+                    <p>Wake up to breathtaking vistas of the surrounding peaks from your window.</p>
+
+                </div>
+                <div class="box">
+                    <i class="ri-leaf-line"></i>
+                    <h2>Garden & Relaxation</h2>
+                    <p>A lush, peaceful garden area perfect for morning yoga or evening tea.</p>
+                </div>
+                <div class="box">
+                    <i class="ri-java-line"></i>
+                    <h2>Local Food Experience</h2>
+                    <p>Authentic home-cooked meals prepared with fresh, organic local ingredients.</p>
+                </div>
+                <div class="box">
+                    <i class="ri-wifi-line"></i>
+                    <h2>Free WiFi & Essentials</h2>
+                    <p>Stay connected with high-speed internet while enjoying the remote serenity.</p>
+                </div>
+            </div>
+        </section>
+
+       <section id="booking-section">
+
+  <form class="booking-form" onsubmit="sendToWhatsApp(); return false;">
+
+    <h2>Book Your Stay</h2>
+
+    <div class="form-grid">
+
+      <input type="text" id="name" placeholder="Full Name" required>
+
+      <input type="tel" id="phone" placeholder="Phone Number" required>
+
+      <input type="date" id="checkin" required>
+
+      <input type="date" id="checkout" required>
+
+      <select id="guests" required>
+        <option value="">Guests</option>
+        <option>1 Guest</option>
+        <option>2 Guests</option>
+        <option>3 Guests</option>
+        <option>4 Guests</option>
+      </select>
+
+    </div>
+
+    <textarea id="message" placeholder="Special Request (Optional)"></textarea>
+
+    <button type="submit" class="book-btn">Book Now</button>
+
+  </form>
+
+</section>
+
+        <div class="banner">
+            <i class="ri-leaf-line"></i>
+            <p>"Where every moment is designed for rest and renewal."</p>
+        </div>
+
+        
+
+        <section id="gallery">
+            <div class="gallery-heading">
+                <h3>Gallery</h3>
+                <div class="line"></div>
+                <br>
+                <p>A visual journey through our retreat and the stunning landscapes of Sikkim.</p>
+            </div>
+            <!-- ===== Gallery Tabs ===== -->
+            <div class="gallery-tabs">
+                <button class="tab-btn active" data-filter="all">All</button>
+                <button class="tab-btn" data-filter="bedroom">Bed Room</button>
+                <button class="tab-btn" data-filter="hall">Hall Room</button>
+                <button class="tab-btn" data-filter="garden">Garden</button>
+                <button class="tab-btn" data-filter="view">View</button>
+            </div>
+
+            <!-- ===== Gallery Images ===== -->
+            <div class="gallery-grid">
+
+                <!-- Bedroom -->
+                <div class="gallery-item bedroom">
+                    <img src="./images/bed_room.jpeg" alt="">
+                </div>
+
+                <div class="gallery-item bedroom">
+                    <img src="./images/bed_room2.jpeg" alt="">
+                </div>
+
+                <!-- Hall -->
+                <div class="gallery-item hall">
+                    <img src="./images/hallroom.jpeg" alt="">
+                </div>
+
+                <div class="gallery-item hall">
+                    <img src="./images/hallroom_2.jpeg" alt="">
+                </div>
+
+                <!-- Garden -->
+
+                <div class="gallery-item garden">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweqcDvZKm0saPcIeJHGF_fElmbzmsfZX5sClVdC0wG9uU5jlLtBrcnqqb-KFC_rR28IwKX4LIQJcMUwxLD4eFtEs9zTBoiu_YW3Ig0hN1ucgvHm63JQDS4yXl87RmMvb_a-ukFWt5sK4XXM=s1360-w1360-h1020-rw"
+                        alt="">
+                </div>
+
+                <div class="gallery-item garden">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweryFanSqZLZq7u3dZhiylfwh39POVClb9QrkLD95ikd6mWq07k3jOciMy_eD4SFhGVRhB97TELwIXkqU9iJ_Zg2u4Udlu4dCsE8vqH7lXclSV4ibRp1mWqAtkhJGVEaqitusuDL0b07ldg=s1360-w1360-h1020-rw"
+                        alt="">
+                </div>
+
+                <div class="gallery-item garden">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwerUn8W0Htp2X5bVk979xH4aHghs42aNr6le7XTpfaIc-gErlYlDX_tpTPjTbFaKpgB2gO7FQMmsg6k5gJ0K9OIniChy9d5JsHlC_BsMS0PZ4M7AJCV2FqEh1Bf7XjHxJC3mmfjTyTjo5fo=s1360-w1360-h1020-rw"
+                        alt="">
+                </div>
+
+                <!-- View -->
+                <div class="gallery-item view">
+                    <img src="./images/hero.jpg" alt="">
+                </div>
+
+                <div class="gallery-item view">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwepyRFy7xzcEb7r8I1z9Dnes5qbXXUPjdv9_mCI1RpWIIeWBXy34bNIa5kmee8NIHB0DcPrEOh8PNQkyG8l1P0kjmZ1hDZL41IwL98Fm-jGrw20xqxXgsS7gpD-o6j1JSh5DtUvN7xvwtMPZ=s1360-w1360-h1020-rw"
+                        alt="">
+                </div>
+
+                <div class="gallery-item view">
+                    <img src="./images/view5.jpeg" alt="">
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <section id="contact-section">
+            <div class="contact-container">
+
+                <!-- LEFT SIDE -->
+                <div class="contact-left">
+                    <h2>Get in Touch</h2>
+                    <p>
+                        Ready to experience the tranquility of Tamu Kyi Retreat?
+                        Contact us for bookings, inquiries, or just to say hello.
+                    </p>
+
+                    <div class="contact-info">
+
+                        <div class="info-item">
+                            <div class="icon"><i class="ri-phone-line"></i></div>
+                            <div>
+                                <h4>Phone</h4>
+                                <span>+91 85259 81373</span>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="icon"><i class="ri-mail-send-line"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <span>shivarajgurung88@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="icon"><i class="ri-map-pin-line"></i></div>
+                            <div>
+                                <h4>Location</h4>
+                                <span>Kaluk, Sikkim 737111</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- MAP IMAGE -->
+                    <div class="map-card">
+
+  <a href="https://www.google.com/maps/dir/?api=1&destination=Tamu+Kyi+Retreat"
+     target="_blank"
+     class="map-link">
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3547.421011247428!2d88.23040021068176!3d27.23732227635704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e6810042df4051%3A0x287c890c5a22a431!2sTamu%20Kyi%20Retreat!5e0!3m2!1sen!2sin!4v1775415868721!5m2!1sen!2sin"
+      loading="lazy">
+    </iframe>
+
+    <!-- Overlay -->
+    <div class="map-overlay"></div>
+
+    <!-- Button -->
+    <div class="map-btn">
+      📍 Get Directions
+    </div>
+
+  </a>
+
+</div>
+                </div>
+
+
+                <!-- RIGHT SIDE FORM -->
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+
+                    <form id="contactForm">
+
+                        <label>Full Name</label>
+                        <input type="text" name="from_name" required>
+
+                        <label>Email Address</label>
+                        <input type="email" name="from_email" required>
+
+                        <label>Your Message</label>
+                        <textarea name="message" required></textarea>
+
+                        <button type="submit" class="send-btn">
+                            Send a Message →
+                        </button>
+
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= FOOTER ================= -->
+
+        <footer class="footer">
+
+            <div class="footer-content">
+
+                <div class="footer-brand">
+                    <h2>Tamu Kyi <span>Retreat</span></h2>
+                    <p>Experience peace, comfort, and authentic hospitality in the heart of North Sikkim.</p>
+                </div>
+
+                <div class="quick-links">
+                    <h3>Quick Links</h3>
+                    <a href="#home">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact-section">Contact</a>
+                </div>
+
+                <div class="footer-contact">
+
+                    <h3>Contact Us</h3>
+                    <br>
+                    <div class="contact-item">
+                        <p class="footer-contact copy-phone">
+                            <i class="fas fa-phone"></i>
+                            <span id="phoneNumber">+91 85259 81373</span>
+                        </p>
+
+                        <!-- popup message -->
+                        <div id="copyMessage">Phone number copied!</div>
+                    </div>
+
+                    <div class="contact-item">
+                        <a href="mailto:Shivarajgurung88@gmail.com" class="footer-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>Shivarajgurung88@gmail.com</span>
+                        </a>
+                    </div>
+
+                    <div class="contact-item">
+                        <p class="footer-item">
+                            <a href="https://www.google.com/maps/dir//Tamu+Kyi+Retreat,+66PM%2BW5H,+Kaluk,+Sikkim+737111/@26.7310691,88.39168,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x39e6810042df4051:0x287c890c5a22a431!2m2!1d88.2329938!2d27.2373293?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D"
+                                target="_blank">
+                                <i class="fa-solid fa-location-dot"></i>
+                                North Sikkim, India
+                            </a>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Tamu Kyi Retreat • All Rights Reserved</p>
+            </div>
+
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
