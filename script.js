@@ -81,37 +81,44 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-document.getElementById("bookingForm")
-.addEventListener("submit", function(e){
+// ================= WHATSAPP BOOKING =================
 
-  e.preventDefault();
+document.getElementById("bookingForm")
+.addEventListener("submit", function(e) {
+
+  e.preventDefault(); // ⭐ stops page scrolling / reload
 
   const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
   const phone = document.getElementById("phone").value;
   const checkin = document.getElementById("checkin").value;
   const checkout = document.getElementById("checkout").value;
   const guests = document.getElementById("guests").value;
-  const message = document.getElementById("message").value;
+
+  let message = document.getElementById("message").value;
+
+  // default message if empty
+  if(message.trim() === ""){
+    message = "Are rooms available?";
+  }
+
+  // Owner WhatsApp number (NO + sign)
+  const ownerNumber = "918525981373";
 
   const whatsappMessage =
-`🌿 Booking Request — 
+`Hello, I would like to book a stay at Tamu Kyi Retreat.
 
 Name: ${name}
-Email: ${email}
 Phone: ${phone}
-
 Check-in: ${checkin}
 Check-out: ${checkout}
 Guests: ${guests}
 
 Message: ${message}`;
 
-  const phoneNumber = "918525981373"; // ← CHANGE
+  const encodedMessage = encodeURIComponent(whatsappMessage);
 
   const whatsappURL =
-    `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+    `https://wa.me/${ownerNumber}?text=${encodedMessage}`;
 
   window.open(whatsappURL, "_blank");
-
 });
