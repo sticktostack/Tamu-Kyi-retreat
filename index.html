@@ -109,16 +109,23 @@
 
       <input type="tel" id="phone" placeholder="Phone Number" required>
 
-      <input type="date" id="checkin" required>
+      <div class="date-group">
+  <input type="date" id="checkin" required>
+  <label for="checkin">Check-in</label>
+</div>
 
-      <input type="date" id="checkout" required>
+<div class="date-group">
+  <input type="date" id="checkout" required>
+  <label for="checkout">Check-out</label>
+</div>
 
       <select id="guests" required>
         <option value="">Guests</option>
-        <option>1 Guest</option>
-        <option>2 Guests</option>
-        <option>3 Guests</option>
-        <option>4 Guests</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5 or above</option>
       </select>
 
     </div>
